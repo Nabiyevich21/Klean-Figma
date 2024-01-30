@@ -1,0 +1,323 @@
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-ExtraBoldItalic.woff2") format("woff2"), url("Nunito-ExtraBoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-Black.woff2") format("woff2"), url("Nunito-Black.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-BlackItalic.woff2") format("woff2"), url("Nunito-BlackItalic.woff") format("woff");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-Bold.woff2") format("woff2"), url("Nunito-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-ExtraLightItalic.woff2") format("woff2"), url("Nunito-ExtraLightItalic.woff") format("woff");
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-Italic.woff2") format("woff2"), url("Nunito-Italic.woff") format("woff");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-ExtraLight.woff2") format("woff2"), url("Nunito-ExtraLight.woff") format("woff");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-BoldItalic.woff2") format("woff2"), url("Nunito-BoldItalic.woff") format("woff");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-ExtraBold.woff2") format("woff2"), url("Nunito-ExtraBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-SemiBoldItalic.woff2") format("woff2"), url("Nunito-SemiBoldItalic.woff") format("woff");
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-Light.woff2") format("woff2"), url("Nunito-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-MediumItalic.woff2") format("woff2"), url("Nunito-MediumItalic.woff") format("woff");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-SemiBold.woff2") format("woff2"), url("Nunito-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-LightItalic.woff2") format("woff2"), url("Nunito-LightItalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-Medium.woff2") format("woff2"), url("Nunito-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Nunito";
+  src: url("/fonts/Nunito-Regular.woff2") format("woff2"), url("Nunito-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 30px 0 38px;
+}
+.navbar .nav__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.navbar .nav__wrapper .navbar__contents {
+  display: flex;
+  gap: 65px;
+}
+.navbar .nav__wrapper .navbar__contents #navbar__logo {
+  position: relative;
+}
+.navbar .nav__wrapper .navbar__contents #navbar__logo {
+  display: block;
+}
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .navbar .nav__wrapper .navbar__contents #navbar__logo {
+    position: absolute;
+    z-index: 999;
+  }
+}
+.navbar .nav__wrapper .navbar__contents .navbar__list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+}
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .navbar .nav__wrapper .navbar__contents .navbar__list {
+    transform: translateX(-100%);
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    left: 0;
+    /* From https://css.glass */
+    background: rgba(31, 31, 244, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-top-right-radius: 16px;
+    border-bottom-right-radius: 16px;
+    height: 100vh;
+    width: 60%;
+    padding: 100px 80px;
+    z-index: 99;
+  }
+}
+.navbar .nav__wrapper .navbar__contents .navbar__list .navbar__list-item a {
+  color: #485466;
+  font-size: 16px;
+  font-weight: 400;
+}
+.navbar .nav__wrapper .navbar__contents .navbar__list .active {
+  transform: translateX(0);
+}
+.navbar .nav__wrapper .navbar__contents .navbar__list .BurgerActive {
+  z-index: 999;
+}
+.navbar .nav__wrapper .navbar__list-btn {
+  display: none;
+}
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .navbar .nav__wrapper .navbar__list-btn {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+}
+.navbar .nav__wrapper .navbar__list-btn .navbar__btn-one {
+  color: #4e92f9;
+  font-size: 16px;
+  font-weight: 700;
+}
+@media screen and (max-width: 767px) {
+  .navbar .nav__wrapper .navbar__list-btn .navbar__btn-one {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.navbar .nav__wrapper .navbar__list-btn .navbar__btn-two {
+  font-size: 16px;
+  font-weight: 700;
+  background: var(--Gradient-Primary, linear-gradient(113deg, #c381db 0%, #4e92f9 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 8px;
+  padding: 7px 16px;
+  /* Soft Shadow */
+  box-shadow: 0px 7px 20px 0px rgba(49, 69, 255, 0.13);
+}
+@media screen and (max-width: 767px) {
+  .navbar .nav__wrapper .navbar__list-btn .navbar__btn-two {
+    font-size: 16px;
+    font-weight: 500;
+  }
+}
+.navbar .nav__wrapper .navbar__buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .navbar .nav__wrapper .navbar__buttons {
+    display: none;
+  }
+}
+.navbar .nav__wrapper .navbar__buttons .navbar__btn-one {
+  color: #4e92f9;
+  font-size: 16px;
+  font-weight: 700;
+}
+.navbar .nav__wrapper .navbar__buttons .navbar__btn-two {
+  font-size: 16px;
+  font-weight: 700;
+  background: var(--Gradient-Primary, linear-gradient(113deg, #c381db 0%, #4e92f9 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  border-radius: 8px;
+  padding: 7px 16px;
+  /* Soft Shadow */
+  box-shadow: 0px 7px 20px 0px rgba(49, 69, 255, 0.13);
+}
+.navbar .nav__wrapper .navbar__burger div {
+  display: none;
+  width: 25px;
+  height: 3px;
+  margin: 5px;
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (min-width: 0) and (max-width: 1024px) {
+  .navbar .nav__wrapper .navbar__burger div {
+    display: flex;
+  }
+}
+
+.hero {
+  overflow: hidden;
+}
+.hero .hero__wrapper {
+  display: flex;
+  align-items: center;
+}
+.hero .hero__wrapper .hero__contents h2 {
+  font-size: 51px;
+  font-weight: 700;
+  background: var(--Gradient-Primary, linear-gradient(113deg, #c381db 0%, #4e92f9 100%));
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero .hero__wrapper .hero__contents h3 {
+  color: #485466;
+  font-size: 40px;
+  font-weight: 400;
+}
+.hero .hero__wrapper .hero__contents h3 span {
+  color: #485466;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 48px;
+}
+.hero .hero__wrapper .hero__contents p {
+  color: #5a6980;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 140%;
+  width: 431px;
+  margin-bottom: 50px;
+}
+.hero .hero__wrapper .hero__contents a {
+  color: #fff;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  padding: 7px 16px;
+  border-radius: 8px;
+  background: var(--Gradient-Primary, linear-gradient(113deg, #c381db 0%, #4e92f9 100%));
+}
+.hero .hero__wrapper #hero__bg {
+  margin-right: -500px;
+}/*# sourceMappingURL=main.css.map */
