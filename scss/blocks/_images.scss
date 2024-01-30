@@ -1,0 +1,11 @@
+.images {
+    margin-top: 157px;
+    margin-bottom: 157px;
+
+    .images__contents {
+        display: flex;
+        justify-content: space-around;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+}
