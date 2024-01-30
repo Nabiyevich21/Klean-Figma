@@ -97,21 +97,21 @@
                     line-height: 140%;
                     width: 252px;
                 }
-                a {
+                .service__icons {
                     color: #4e92f9;
                     font-size: 16px;
                     font-weight: 700;
                     margin-left: -165px;
                     margin-top: 22px;
                 }
-                a {
+                .service__icons {
                     background-image: url(/img/icons.svg);
                     background-repeat: no-repeat;
                     background-position: center left 127px;
                     padding: 10px 38px;
                     transition: all 0.3s ease;
                 }
-                a:hover {
+                .service__icons:hover {
                     background-position: center left 133px;
                 }
             }

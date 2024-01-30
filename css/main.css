@@ -486,20 +486,20 @@ a {
   line-height: 140%;
   width: 252px;
 }
-.service .service__wrapper .service__list .service__list-item a {
+.service .service__wrapper .service__list .service__list-item .service__icons {
   color: #4e92f9;
   font-size: 16px;
   font-weight: 700;
   margin-left: -165px;
   margin-top: 22px;
 }
-.service .service__wrapper .service__list .service__list-item a {
+.service .service__wrapper .service__list .service__list-item .service__icons {
   background-image: url(/img/icons.svg);
   background-repeat: no-repeat;
   background-position: center left 127px;
   padding: 10px 38px;
   transition: all 0.3s ease;
 }
-.service .service__wrapper .service__list .service__list-item a:hover {
+.service .service__wrapper .service__list .service__list-item .service__icons:hover {
   background-position: center left 133px;
 }/*# sourceMappingURL=main.css.map */
