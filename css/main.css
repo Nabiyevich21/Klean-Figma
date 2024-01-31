@@ -813,7 +813,6 @@ a {
 @media screen and (max-width: 767px) {
   .second {
     margin: 0;
-    padding: 100px;
   }
 }
 .second .second__wrapper {

@@ -7,8 +7,8 @@
     }
     @include mobile() {
         margin: 0;
-        padding: 100px;
     }
+
     .second__wrapper {
         display: flex;
         align-items: center;
