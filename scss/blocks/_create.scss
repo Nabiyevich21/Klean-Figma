@@ -1,0 +1,137 @@
+.create {
+    margin-bottom: 155px;
+
+    .create__wrapper {
+        display: flex;
+        align-items: center;
+        gap: 200px;
+        @include tablet() {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+        @include mobile() {
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+        }
+
+        img {
+            position: relative;
+            margin-top: -100px;
+            padding: 44px;
+            border-radius: 86px;
+            border: 2px solid #fff;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(15px);
+
+            @include mobile() {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                margin-bottom: -100px;
+            }
+        }
+
+        .create__bg {
+            position: absolute;
+            z-index: -1;
+            margin-left: 150px;
+            margin-bottom: -180px;
+            width: 408px;
+            height: 408px;
+            flex-shrink: 0;
+            border-radius: 61px;
+            background: linear-gradient(164deg, rgba(78, 146, 249, 0.25) 10.99%, rgba(195, 129, 219, 0.25) 113.57%);
+
+            @include tablet() {
+                margin-left: 198px;
+                margin-bottom: 404px;
+            }
+            @include mobile() {
+                display: none;
+            }
+        }
+        .create__list {
+            .create__list-item {
+                @include tablet() {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                @include mobile() {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                h2 {
+                    color: #242a33;
+                    font-size: 40px;
+                    font-weight: 700;
+                    line-height: 48px;
+                    width: 460px;
+                    @include tablet() {
+                        text-align: center;
+                        width: 660px;
+                    }
+                    @include mobile() {
+                        text-align: center;
+                        width: 360px;
+                        font-size: 29px;
+                    }
+                }
+
+                h5 {
+                    color: #5a6980;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 140%;
+                    margin-top: 25px;
+                    margin-bottom: 25px;
+                    @include tablet() {
+                        text-align: center;
+                        width: 550px;
+                    }
+                    @include mobile() {
+                        text-align: center;
+                        width: 360px;
+                    }
+                }
+                p {
+                    color: #5a6980;
+                    font-size: 16px;
+                    font-weight: 400;
+                    line-height: 140%;
+                    margin-bottom: 48px;
+                    @include tablet() {
+                        text-align: center;
+                        width: 550px;
+                    }
+                    @include mobile() {
+                        text-align: center;
+                        width: 360px;
+                    }
+                    span {
+                        color: #5a6980;
+                        font-size: 16px;
+                        font-weight: 700;
+                    }
+                }
+
+                a {
+                    padding: 7px 16px;
+                    border-radius: 8px;
+                    border: 1px solid var(--Gradient-Primary, #c381db);
+                    font-size: 16px;
+                    font-weight: 700;
+                    background: var(--Gradient-Primary, linear-gradient(113deg, #c381db 0%, #4e92f9 100%));
+                    background-clip: text;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+    }
+}
