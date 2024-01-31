@@ -1,0 +1,78 @@
+.projects {
+    margin-top: 224px;
+    margin-bottom: 113px;
+
+    .projects__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        h2 {
+            color: #242a33;
+            font-size: 40px;
+            font-weight: 700;
+            line-height: 48px;
+            @include tablet() {
+                font-size: 35px;
+            }
+
+            @include mobile() {
+                font-size: 25px;
+            }
+        }
+        p {
+            color: #5a6980;
+            text-align: center;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 140%;
+            width: 558px;
+            margin-top: 13px;
+            margin-bottom: 78px;
+            @include tablet() {
+                font-size: 14px;
+            }
+            @include mobile() {
+                font-size: 14px;
+                width: 350px;
+            }
+        }
+
+        .contents {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 25px;
+            border-radius: 27px;
+            border: 2px solid #fff;
+            background: linear-gradient(138deg, rgba(255, 255, 255, 0) 4.16%, rgba(255, 255, 255, 0.5) 102.02%);
+            margin-bottom: 88px;
+            @include tablet() {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+            }
+            @include mobile() {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 10px;
+            }
+        }
+        a {
+            padding: 6.714px 15.347px;
+            border-radius: 7.673px;
+            border: 0.959px solid var(--Gradient-Primary, #c381db);
+            font-size: 15.347px;
+            font-weight: 700;
+            background: var(--Gradient-Primary, linear-gradient(113deg, #c381db 0%, #4e92f9 100%));
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            @include mobile() {
+                margin: 0;
+            }
+        }
+    }
+}
