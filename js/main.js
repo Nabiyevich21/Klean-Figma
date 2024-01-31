@@ -8,6 +8,7 @@ const navbarAnimation = () => {
     navList.classList.toggle("active");
     if (navList.classList.contains("active")) {
       navList.style.transform = "translate(0)";
+      // navBurger.style.z-index = "999";
       navList.style.transition = "transform 0.3s";
     } else {
       navList.style.transform = "translate(-100%)";
